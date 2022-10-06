@@ -1,8 +1,11 @@
 class Collectible {
-  constructor({x, y, value, id}) {
-
+  constructor({ x, y, value, id, radius }) {
+    this.x = x;
+    this.y = y;
+    this.value = value;
+    this.id = id;
+    this.radius = radius;
   }
-
 }
 
 /*
@@ -11,6 +14,6 @@ class Collectible {
 */
 try {
   module.exports = Collectible;
-} catch(e) {}
+} catch (e) {}
 
 export default Collectible;
